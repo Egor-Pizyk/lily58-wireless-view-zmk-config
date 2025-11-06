@@ -10,18 +10,18 @@
 
 / {
     macros {
-        mac: onePass {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H &kp E &kp LS(E) &kp G &kp A &kp N1 &kp N3 &kp N5 &kp N1 &kp N5 &kp N9 &kp EXCL>;
-            label = "ONEPASS";
-        };
-
         onePassword: macPass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N7 &kp RBRC &kp QMARK &kp LS(S) &kp LS(Q) &kp LT &kp N8 &kp N8 &kp M &kp E &kp LS(J) &kp X>;
             label = "MACPASS";
+        };
+
+        mac: mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp H &kp E &kp LS(E) &kp G &kp A &kp N3 &kp N5 &kp N7 &kp N1 &kp N5 &kp N9 &kp EXCL>;
+            label = "MAC";
         };
     };
 
