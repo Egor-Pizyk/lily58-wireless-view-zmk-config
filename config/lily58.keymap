@@ -17,7 +17,7 @@
             label = "MACPASS";
         };
 
-        mac: mac {
+        macPassword: mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp H &kp E &kp LS(E) &kp G &kp A &kp N3 &kp N5 &kp N7 &kp N1 &kp N5 &kp N9 &kp EXCL>;
@@ -81,11 +81,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans          &trans  &checkout_feature  &mac    &trans  &trans                     &kp K_MUTE         &trans          &trans          &trans           &onePassword          &trans
-&kp GRAVE       &kp N1  &kp N2             &kp N3  &kp N4  &kp N5                     &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp C_BRIGHTNESS_INC  &trans
-&kp F1          &kp F2  &kp F3             &kp F4  &kp F5  &kp F6                     &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &trans
-&kp LEFT_SHIFT  &kp F8  &kp F9             &trans  &trans  &kp F12  &trans    &trans  &kp C_PLAY         &kp MINUS       &kp EQUAL       &kp LBKT         &kp RBKT              &kp BSLH
-                                           &trans  &trans  &trans   &trans    &trans  &trans             &trans          &trans
+&trans          &trans  &checkout_feature  &macPassword  &trans  &trans                     &kp K_MUTE         &trans          &trans          &trans           &onePassword          &trans
+&kp GRAVE       &kp N1  &kp N2             &kp N3        &kp N4  &kp N5                     &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp C_BRIGHTNESS_INC  &trans
+&kp F1          &kp F2  &kp F3             &kp F4        &kp F5  &kp F6                     &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &trans
+&kp LEFT_SHIFT  &kp F8  &kp F9             &trans        &trans  &kp F12  &trans    &trans  &kp C_PLAY         &kp MINUS       &kp EQUAL       &kp LBKT         &kp RBKT              &kp BSLH
+                                           &trans        &trans  &trans   &trans    &trans  &trans             &trans          &trans
             >;
         };
     };
