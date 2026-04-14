@@ -25,11 +25,18 @@
             label = "MAC";
         };
 
-        current_branch: current_branch {
+        quick_push: quiq_push {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp I &kp T &kp SPACE &kp R &kp E &kp V &kp MINUS &kp P &kp A &kp R &kp S &kp E &kp SPACE &kp MINUS &kp MINUS &kp A &kp B &kp B &kp R &kp E &kp V &kp MINUS &kp R &kp E &kp F &kp SPACE &kp LS(H) &kp LS(E) &kp LS(A) &kp LS(D)>;
-            label = "CURRENT_BRANCH";
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp S &kp H &kp SPACE &kp O &kp R &kp I &kp G &kp I &kp N &kp SPACE &kp DLLR &kp LPAR &kp G &kp I &kp T &kp SPACE &kp R &kp E &kp V &kp MINUS &kp P &kp A &kp R &kp S &kp E &kp SPACE &kp MINUS &kp MINUS &kp A &kp B &kp B &kp R &kp E &kp V &kp MINUS &kp R &kp E &kp F &kp SPACE &kp LS(H) &kp LS(E) &kp LS(A) &kp LS(D) &kp RPAR &kp RET>;
+            label = "QUIQ_PUSH";
+        };
+
+        quick_pull: quick_pull {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp I &kp T &kp SPACE &kp P &kp U &kp L &kp L &kp SPACE &kp O &kp R &kp I &kp G &kp I &kp N &kp SPACE &kp DLLR &kp LPAR &kp G &kp I &kp T &kp SPACE &kp R &kp E &kp V &kp MINUS &kp P &kp A &kp R &kp S &kp E &kp SPACE &kp MINUS &kp MINUS &kp A &kp B &kp B &kp R &kp E &kp V &kp MINUS &kp R &kp E &kp F &kp SPACE &kp LS(H) &kp LS(E) &kp LS(A) &kp LS(D) &kp RPAR>;
+            label = "QUICK_PULL";
         };
     };
 
@@ -82,11 +89,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans          &trans  &current_branch  &macPassword  &trans   &trans                     &kp K_MUTE         &trans          &trans          &trans           &onePassword          &trans
-&kp GRAVE       &kp N1  &kp N2           &kp N3        &kp N4   &kp N5                     &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp C_BRIGHTNESS_INC  &trans
-&kp F1          &kp F2  &kp F3           &kp F4        &kp F5   &kp F6                     &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &trans
-&kp LEFT_SHIFT  &kp F8  &kp F9           &kp F10       &kp F11  &kp F12  &trans    &trans  &kp C_PLAY         &kp MINUS       &kp EQUAL       &kp LBKT         &kp RBKT              &kp BSLH
-                                         &trans        &trans   &trans   &trans    &trans  &trans             &trans          &trans
+&trans          &quick_pull  &quick_push  &macPassword  &trans   &trans                     &kp K_MUTE         &trans          &trans          &trans           &onePassword          &kp LC(LG(Q))
+&kp GRAVE       &kp N1       &kp N2       &kp N3        &kp N4   &kp N5                     &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp C_BRIGHTNESS_INC  &trans
+&kp F1          &kp F2       &kp F3       &kp F4        &kp F5   &kp F6                     &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &trans
+&kp LEFT_SHIFT  &kp F8       &kp F9       &kp F10       &kp F11  &kp F12  &trans    &trans  &kp C_PLAY         &kp MINUS       &kp EQUAL       &kp LBKT         &kp RBKT              &kp BSLH
+                                          &trans        &trans   &trans   &trans    &trans  &trans             &trans          &trans
             >;
         };
 
