@@ -25,18 +25,11 @@
             label = "MAC";
         };
 
-        quick_push: quiq_push {
+        work_email: work_email {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp G &kp P &kp H &kp RET>;
-            label = "QUIQ_PUSH";
-        };
-
-        quick_pull: quick_pull {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp G &kp P &kp L &kp RET>;
-            label = "QUICK_PULL";
+            bindings = <&kp AT &kp S &kp T &kp O &kp R &kp Y &kp B &kp Y &kp DOT &kp T &kp E &kp C &kp H>;
+            label = "WORK_EMAIL";
         };
     };
 
@@ -89,11 +82,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans          &quick_pull  &quick_push  &macPassword  &trans   &trans                     &kp K_MUTE         &trans          &trans          &trans           &onePassword          &kp LC(LG(Q))
-&kp GRAVE       &kp N1       &kp N2       &kp N3        &kp N4   &kp N5                     &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp C_BRIGHTNESS_INC  &trans
-&kp F1          &kp F2       &kp F3       &kp F4        &kp F5   &kp F6                     &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &trans
-&kp LEFT_SHIFT  &kp F8       &kp F9       &kp F10       &kp F11  &kp F12  &trans    &trans  &kp C_PLAY         &kp MINUS       &kp EQUAL       &kp LBKT         &kp RBKT              &kp BSLH
-                                          &trans        &trans   &trans   &trans    &trans  &trans             &trans          &trans
+&trans          &work_email  &trans  &macPassword  &trans   &trans                     &kp K_MUTE         &trans          &trans          &trans           &onePassword          &kp LC(LG(Q))
+&kp GRAVE       &kp N1       &kp N2  &kp N3        &kp N4   &kp N5                     &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp C_BRIGHTNESS_INC  &trans
+&kp F1          &kp F2       &kp F3  &kp F4        &kp F5   &kp F6                     &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &trans
+&kp LEFT_SHIFT  &kp F8       &kp F9  &kp F10       &kp F11  &kp F12  &trans    &trans  &kp C_PLAY         &kp MINUS       &kp EQUAL       &kp LBKT         &kp RBKT              &kp BSLH
+                                     &trans        &trans   &trans   &trans    &trans  &trans             &trans          &trans
             >;
         };
 
