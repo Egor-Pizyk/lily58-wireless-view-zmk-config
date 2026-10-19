@@ -11,17 +11,17 @@
 
 / {
     macros {
-        onePassword: macPass {
+        one: macPass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N7 &kp RBRC &kp QMARK &kp LS(S) &kp LS(Q) &kp LT &kp N8 &kp N8 &kp M &kp E &kp LS(J) &kp X>;
             label = "MACPASS";
         };
 
-        macPassword: mac {
+        mac: mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H &kp E &kp LS(E) &kp G &kp A &kp N3 &kp N5 &kp N7 &kp N1 &kp N5 &kp N9 &kp EXCL &kp EXCLAMATION>;
+            bindings = <&kp LS(T) &kp H &kp E &kp LS(E) &kp G &kp A &kp N3 &kp N5 &kp N7 &kp N1 &kp N5 &kp N9 &kp EXCL &kp EXCLAMATION &kp EXCLAMATION>;
             label = "MAC";
         };
 
@@ -82,20 +82,20 @@
 
             display-name = "Raise";
             bindings = <
-&trans          &work_email  &trans  &macPassword  &trans   &trans                     &kp K_MUTE         &trans          &trans          &trans           &onePassword          &kp LC(LG(Q))
-&kp GRAVE       &kp N1       &kp N2  &kp N3        &kp N4   &kp N5                     &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp C_BRIGHTNESS_INC  &trans
-&kp F1          &kp F2       &kp F3  &kp F4        &kp F5   &kp F6                     &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &trans
-&kp LEFT_SHIFT  &kp F8       &kp F9  &kp F10       &kp F11  &kp F12  &trans    &trans  &kp C_PLAY         &kp MINUS       &kp EQUAL       &kp LBKT         &kp RBKT              &kp BSLH
-                                     &trans        &trans   &trans   &trans    &trans  &trans             &trans          &trans
+&trans          &work_email  &trans  &mac     &trans   &trans                     &kp K_MUTE         &trans          &trans          &trans           &one                  &kp LC(LG(Q))
+&kp GRAVE       &kp N1       &kp N2  &kp N3   &kp N4   &kp N5                     &kp C_VOLUME_UP    &kp C_PREVIOUS  &kp UP_ARROW    &kp C_NEXT       &kp C_BRIGHTNESS_INC  &trans
+&kp F1          &kp F2       &kp F3  &kp F4   &kp F5   &kp F6                     &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_BRIGHTNESS_DEC  &trans
+&kp LEFT_SHIFT  &kp F8       &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &kp C_PLAY         &kp MINUS       &kp EQUAL       &kp LBKT         &kp RBKT              &kp BSLH
+                                     &trans   &trans   &trans   &trans    &trans  &trans             &trans          &trans
             >;
         };
 
         mous_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &mkp MCLK       &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &mkp MCLK       &trans           &trans  &kp F16
+&trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &kp F17
+&trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp F18
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans          &trans           &trans  &kp F19
                         &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans
             >;
         };
