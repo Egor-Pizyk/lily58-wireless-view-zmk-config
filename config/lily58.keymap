@@ -92,11 +92,11 @@
 
         mous_layer {
             bindings = <
-&kp F20  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &mkp MCLK       &trans           &trans  &kp F16
-&kp F21  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &kp F17
-&kp F22  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp F18
-&kp F23  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans          &trans           &trans  &kp F19
-                         &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans
+&kp LS(LA(LC(LG(A))))  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &mkp MCLK       &trans           &trans  &kp LS(LA(LC(LG(E))))
+&kp LS(LG(LC(LA(B))))  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &kp LG(LC(LA(LS(F))))
+&kp LC(LA(LS(LG(C))))  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp LG(LC(LA(LS(G))))
+&kp LS(LG(LC(LA(D))))  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans          &trans           &trans  &kp LG(LA(LC(LS(H))))
+                                       &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans
             >;
         };
     };
