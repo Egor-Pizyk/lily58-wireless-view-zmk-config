@@ -90,13 +90,13 @@
             >;
         };
 
-        mous_layer {
+        shortcuts {
             bindings = <
-&kp LS(LA(LC(LG(A))))  &trans  &trans  &trans  &trans  &trans                    &trans          &trans          &mkp MCLK       &trans           &trans  &kp LS(LA(LC(LG(E))))
-&kp LS(LG(LC(LA(B))))  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &kp LG(LC(LA(LS(F))))
-&kp LC(LA(LS(LG(C))))  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &kp LG(LC(LA(LS(G))))
-&kp LS(LG(LC(LA(D))))  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans          &trans           &trans  &kp LG(LA(LC(LS(H))))
-                                       &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans
+&trans  &trans                 &trans                 &trans                 &trans                 &trans                                   &trans                 &trans                 &mkp MCLK              &trans                 &trans                 &trans
+&trans  &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))  &kp LS(LA(LC(LG(T))))                    &kp LS(LA(LC(LG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &kp LS(LA(LC(LG(P))))  &trans
+&trans  &kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(F))))  &kp LS(LA(LC(LG(G))))                    &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &trans                 &trans
+&trans  &kp LS(LA(LC(LG(Z))))  &kp LS(LA(LC(LG(X))))  &kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(V))))  &kp LS(LA(LC(LG(B))))  &trans    &trans  &kp LS(LA(LC(LG(N))))  &kp LS(LA(LC(LG(M))))  &trans                 &trans                 &trans                 &trans
+                                                      &trans                 &trans                 &trans                 &trans    &trans  &trans                 &trans                 &trans
             >;
         };
     };
